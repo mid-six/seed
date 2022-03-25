@@ -193,7 +193,6 @@ footer a {
 .se_1 {
     width: 100%;
     padding: 165px 0 200px;
-    0;
     flex-direction: column;
     background-image: url(../img/section_1_bg.png);
     background-size: 1920px;
@@ -664,7 +663,6 @@ h3 {
     .se_1 {
         width: 100%;
         padding: 80px 0 80px;
-        0;
         flex-direction: column;
         background-image: url(../img/section_1_bg.png);
         background-size: 100%;
