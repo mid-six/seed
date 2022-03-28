@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+/*색상 변수*/
+/*반응형*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration-line: none;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  display: flex;
+  line-height: 1;
+  flex-direction: column;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  height: 4.4rem;
+  background-color: transparent;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+header .logo {
+  margin-left: 10vw;
+  align-self: center;
+  height: 30px;
+}
+header .logo path {
+  fill: #ffffff;
+}
+header .tr {
+  margin-left: 0;
+  margin-right: 10vw;
+  visibility: hidden;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+header ul li {
+  width: 8rem;
+  text-align: center;
+}
+header ul li a {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.down {
+  background-color: #ffffff;
+}
+.down .logo path {
+  fill: #2D2C2F;
+}
+.down ul li a {
+  color: #2D2C2F;
+}
+
+.section_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -4.4rem;
+  background-image: url("../../img/bg_section_1.png");
+  background-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section_1 .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+}
+.section_1 h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+.section_1 p {
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.section_2 {
+  background-color: bisque;
+  height: 100vh;
+  background-image: url("../../img/bg_section_1.png");
+  background-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=main.css.map */
