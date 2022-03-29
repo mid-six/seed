@@ -1,1 +1,27 @@
-@use '../abstracts' as *;
+@use '../abstracts'as *;
+@use '../base'as *;
+@use '../layout'as *;
+
+/*헤더버튼*/
+
+.gnb-button {
+    height: $gnbHeight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:link {
+    }
+    &:hover {
+        box-shadow: inset 0 -0.2rem $primary-500;
+    }
+    &:active {
+        box-shadow: inset 0 -0.2rem $primary-500;
+    }
+    &:visited {
+        box-shadow: inset 0 -0.2rem $primary-500;
+    }
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}

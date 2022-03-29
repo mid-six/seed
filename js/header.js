@@ -10,7 +10,7 @@ $(function(){
     
     $window.on('scroll', function(){ //스크롤시
       var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-      $header.toggleClass('down', scrolled); //클래스 토글
+      $header.toggleClass('gnb-white', scrolled); //클래스 토글
     });
   });
   

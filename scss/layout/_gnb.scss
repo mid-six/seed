@@ -2,7 +2,7 @@
 
 $gnbHeight : 4.4rem;
 
-header {
+.gnb-transparent {
     z-index: 100;
     position: fixed;
     width: 100%;
@@ -21,6 +21,7 @@ header {
         margin-left: 10vw;
         align-self: center;
         height: 30px;
+
         path {
             fill: $basic-000;
         }
@@ -31,41 +32,28 @@ header {
             left: 0;
             right: 10vw;
         }
+
         visibility: hidden;
     }
 
     ul {
+        width: 400px;
         display: flex;
         flex-direction: row;
         align-self: center;
-
-        li {
-            width: 8rem;
-            text-align: center;
-            a {
-                font: {
-                    size: 0.95rem;
-                    weight: 700;
-                }
-
-                color: $basic-000;
-            }
-        }
+        justify-content: space-between;
     }
 }
 
-.down {
+.gnb-white {
     background-color: $basic-000;
     .logo {
         path {
             fill: $basic-500;
         }
     }
-    ul {
-        li {
-            a {
-                color: $basic-500;
-            }
-        }
+    .gnb-button {
+        color: $basic-500;
     }
+
 }

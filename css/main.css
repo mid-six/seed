@@ -1,6 +1,45 @@
 @charset "UTF-8";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 /*색상 변수*/
+.primary-100 {
+  color: #FFFBEB;
+}
+.primary-500 {
+  color: #FFD53F;
+}
+.primary-600 {
+  color: #F4C930;
+}
+.primary-700 {
+  color: #EDBF1C;
+}
+
+.secondary-100 {
+  color: #E3EFFF;
+}
+.secondary-500 {
+  color: #026BFF;
+}
+
+.basic-000 {
+  color: #ffffff;
+}
+.basic-100 {
+  color: #E4E4E4;
+}
+.basic-200 {
+  color: #B2B1B4;
+}
+.basic-300 {
+  color: #79787B;
+}
+.basic-400 {
+  color: #6D6D6D;
+}
+.basic-500 {
+  color: #2D2C2F;
+}
+
 /*반응형*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -51,14 +90,7 @@ table {
   border-spacing: 0;
 }
 
-h1 {
-  color: #ffffff;
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 7rem;
-}
-
-header {
+.gnb-transparent {
   z-index: 100;
   position: fixed;
   width: 100%;
@@ -73,42 +105,81 @@ header {
   transition-duration: 0.4s;
   transition-timing-function: ease;
 }
-header .logo {
+.gnb-transparent .logo {
   margin-left: 10vw;
   align-self: center;
   height: 30px;
 }
-header .logo path {
+.gnb-transparent .logo path {
   fill: #ffffff;
 }
-header .tr {
+.gnb-transparent .tr {
   margin-left: 0;
   margin-right: 10vw;
   visibility: hidden;
 }
-header ul {
+.gnb-transparent ul {
+  width: 400px;
   display: flex;
   flex-direction: row;
   align-self: center;
-}
-header ul li {
-  width: 8rem;
-  text-align: center;
-}
-header ul li a {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #ffffff;
+  justify-content: space-between;
 }
 
-.down {
+.gnb-white {
   background-color: #ffffff;
 }
-.down .logo path {
+.gnb-white .logo path {
   fill: #2D2C2F;
 }
-.down ul li a {
+.gnb-white .gnb-button {
   color: #2D2C2F;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+}
+
+.body-m {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+/* 버튼 */
+.gnb-font {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/*헤더버튼*/
+.gnb-button {
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+.gnb-button:hover {
+  box-shadow: inset 0 -0.2rem #FFD53F;
+}
+.gnb-button:active {
+  box-shadow: inset 0 -0.2rem #FFD53F;
+}
+.gnb-button:visited {
+  box-shadow: inset 0 -0.2rem #FFD53F;
 }
 
 .section_1 {
@@ -128,13 +199,6 @@ header ul li a {
   flex-direction: column;
   justify-content: center;
   width: 80vw;
-}
-.section_1 p {
-  margin-top: 2rem;
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7rem;
 }
 
 .section_2 {
