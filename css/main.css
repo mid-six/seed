@@ -51,6 +51,13 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+
 header {
   z-index: 100;
   position: fixed;
@@ -121,12 +128,6 @@ header ul li a {
   flex-direction: column;
   justify-content: center;
   width: 80vw;
-}
-.section_1 h1 {
-  color: #ffffff;
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 7rem;
 }
 .section_1 p {
   margin-top: 2rem;
