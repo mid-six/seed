@@ -39,8 +39,41 @@
 .basic-500 {
   color: #2D2C2F;
 }
+.basic-1000 {
+  color: #000000;
+}
+
+.bgcolor-white {
+  background-color: #ffffff;
+}
+.bgcolor-yellow {
+  background-color: #FFD53F;
+}
+.bgcolor-dark {
+  background-color: #2D2C2F;
+}
+.bgcolor-black {
+  background-color: #000000;
+}
 
 /*반응형*/
+.margintop {
+  margin-top: 2rem;
+}
+.marginbottom {
+  margin-bottom: 2rem;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.z-index-3 {
+  z-index: 3;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,6 +169,10 @@ table {
   color: #2D2C2F;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -143,9 +180,15 @@ h1 {
 }
 
 h2 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 4.8rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
 .body-m {
@@ -182,11 +225,21 @@ h2 {
   box-shadow: inset 0 -0.2rem #FFD53F;
 }
 
-.section_1 {
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main-container {
   height: calc(100vh + 4.4rem);
   margin-top: -4.4rem;
   background-image: url("https://mid-six.github.io/seed/img/bg_section_1.png");
@@ -194,21 +247,55 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-.section_1 .title {
+.main-container .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80vw;
 }
 
-.section_2 {
-  background-color: bisque;
-  height: 100vh;
-  background-image: url("../../img/bg_section_1.png");
-  background-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.sub-container {
+  width: 1000px;
+  margin: 10rem 0 10rem 0;
+}
+
+.img-a {
+  margin-top: 4rem;
+  width: 1000px;
+}
+
+.img-smile-box {
+  width: 376px;
+}
+.img-smile-box img {
+  width: 240px;
+}
+.img-smile-box img:nth-child(1) {
+  z-index: 1;
+  margin: 0 0 0 100px;
+}
+.img-smile-box img:nth-child(2) {
+  z-index: 4;
+  margin: -140px 0 0 0;
+}
+.img-smile-box img:nth-child(3) {
+  z-index: 3;
+  margin: -140px 0 0 120px;
+}
+
+.point-image {
+  width: 50px;
+  margin: 0 0 -5px 540px;
+}
+
+.roket {
+  margin: 8px 0 0 16px;
+  width: 28px;
+  position: absolute;
+}
+
+.header-check {
+  height: 80px;
 }
 
 /*# sourceMappingURL=main.css.map */

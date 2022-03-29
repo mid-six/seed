@@ -14,6 +14,7 @@ $basic-200: #B2B1B4;
 $basic-300: #79787B;
 $basic-400: #6D6D6D;
 $basic-500: #2D2C2F;
+$basic-1000: #000000;
 
 .primary {
     &-100 {color: $primary-100;}
@@ -34,4 +35,11 @@ $basic-500: #2D2C2F;
     &-300{color: $basic-300;}
     &-400{color: $basic-400;}
     &-500{color: $basic-500;}
+    &-1000{color: $basic-1000;}
+}
+.bgcolor{
+    &-white{background-color: $basic-000;}
+    &-yellow{background-color: $primary-500;}
+    &-dark{background-color: $basic-500;}
+    &-black{background-color: $basic-1000;}
 }

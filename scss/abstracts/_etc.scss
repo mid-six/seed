@@ -1,0 +1,9 @@
+.margin{
+    &top{margin-top: 2rem;}
+    &bottom{margin-bottom: 2rem;}
+}
+.z-index{
+    &-1{z-index: 1;}
+    &-2{z-index: 2;}
+    &-3{z-index: 3;}
+}

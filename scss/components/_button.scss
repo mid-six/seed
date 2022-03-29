@@ -2,8 +2,9 @@
 @use '../base'as *;
 @use '../layout'as *;
 
-/*헤더버튼*/
 
+
+/*헤더버튼*/
 .gnb-button {
     height: $gnbHeight;
     display: flex;

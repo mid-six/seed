@@ -1,11 +1,20 @@
 @use '../layout'as *;
 @use '../abstracts' as *;
 
-.section_1 {
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-column{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main-container {
     height: calc(100vh + $gnbHeight);
 
     .title {
@@ -27,15 +36,35 @@
     }
 }
 
-.section_2 {
-    background-color: bisque;
-    height: 100vh;
+.sub-container {
+    width: 1000px;
+    margin: 10rem 0 10rem 0;
+}
 
-    background: {
-        image: url('../../img/bg_section_1.png');
-        height: 100vh;
-        repeat: no-repeat;
-        size: cover;
-        position: center;
+.img-a {
+    margin-top: 4rem;
+    width: 1000px;
+}
+.img-smile-box{
+    width: 376px;
+    img{
+        width: 240px;
     }
+    img{
+        &:nth-child(1){ z-index: 1; margin: 0 0 0 100px; }
+        &:nth-child(2){ z-index: 4; margin: -140px 0 0 0; }
+        &:nth-child(3){ z-index: 3; margin: -140px 0 0 120px; }
+    }
+}
+.point-image{
+    width: 50px;
+    margin: 0 0 -5px 540px;
+}
+.roket{
+    margin: 8px 0 0 16px;
+    width: 28px;
+    position: absolute;
+}
+.header-check{
+    height: 80px;
 }
