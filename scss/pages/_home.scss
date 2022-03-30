@@ -66,11 +66,12 @@
     margin: 8px 0 0 16px;
     width: 28px;
     position: absolute;
+    content: url($url-images+"img_home_3_0.png");
 }
 .header-check{
     height: 80px;
 }
 
 .logo-midchamps{
-    content: url($url-images+"img_home_3_1.png");    
+    content: url($url-images+"img_home_3_1.png");
 }
