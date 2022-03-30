@@ -1,6 +1,9 @@
 @use '../layout'as *;
 @use '../abstracts' as *;
 
+$url-images: "https://mid-six.github.io/seed/img/";
+
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -63,7 +66,7 @@
     content: url($url-images+"img_home_2_4.png");
 }
 .roket{
-    margin: 8px 0 0 16px;
+    margin: 0 0 0 16px;
     width: 28px;
     position: absolute;
     content: url($url-images+"img_home_3_0.png");
