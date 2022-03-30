@@ -262,6 +262,7 @@ h3 {
 .img-a {
   margin-top: 4rem;
   width: 1000px;
+  content: url("https://mid-six.github.io/seed/img/img_home_1.png");
 }
 
 .img-smile-box {
@@ -273,19 +274,23 @@ h3 {
 .img-smile-box img:nth-child(1) {
   z-index: 1;
   margin: 0 0 0 100px;
+  content: url("https://mid-six.github.io/seed/img/img_home_2_1.png");
 }
 .img-smile-box img:nth-child(2) {
   z-index: 4;
   margin: -140px 0 0 0;
+  content: url("https://mid-six.github.io/seed/img/img_home_2_2.png");
 }
 .img-smile-box img:nth-child(3) {
   z-index: 3;
   margin: -140px 0 0 120px;
+  content: url("https://mid-six.github.io/seed/img/img_home_2_3.png");
 }
 
 .point-image {
   width: 50px;
   margin: 0 0 -5px 540px;
+  content: url("https://mid-six.github.io/seed/img/img_home_2_4.png");
 }
 
 .roket {
@@ -296,6 +301,10 @@ h3 {
 
 .header-check {
   height: 80px;
+}
+
+.logo-midchamps {
+  content: url("https://mid-six.github.io/seed/img/img_home_3_1.png");
 }
 
 /*# sourceMappingURL=main.css.map */

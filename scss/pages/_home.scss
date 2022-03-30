@@ -44,6 +44,7 @@
 .img-a {
     margin-top: 4rem;
     width: 1000px;
+    content: url($url-images+"img_home_1.png");
 }
 .img-smile-box{
     width: 376px;
@@ -51,14 +52,15 @@
         width: 240px;
     }
     img{
-        &:nth-child(1){ z-index: 1; margin: 0 0 0 100px; }
-        &:nth-child(2){ z-index: 4; margin: -140px 0 0 0; }
-        &:nth-child(3){ z-index: 3; margin: -140px 0 0 120px; }
+        &:nth-child(1){ z-index: 1; margin: 0 0 0 100px; content: url($url-images+"img_home_2_1.png"); }
+        &:nth-child(2){ z-index: 4; margin: -140px 0 0 0; content: url($url-images+"img_home_2_2.png"); }
+        &:nth-child(3){ z-index: 3; margin: -140px 0 0 120px; content: url($url-images+"img_home_2_3.png"); }
     }
 }
 .point-image{
     width: 50px;
     margin: 0 0 -5px 540px;
+    content: url($url-images+"img_home_2_4.png");
 }
 .roket{
     margin: 8px 0 0 16px;
@@ -67,4 +69,8 @@
 }
 .header-check{
     height: 80px;
+}
+
+.logo-midchamps{
+    content: url($url-images+"img_home_3_1.png");    
 }
