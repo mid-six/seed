@@ -1,41 +1,84 @@
 @use '../layout'as *;
-@use '../abstracts' as *;
+@use '../abstracts'as *;
 
 $url-images: "https://mid-six.github.io/seed/img/";
 
 
-.flex-row{
+.flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.flex-column{
+
+.flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
+.video-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.video-box {
+    position: relative;
+    min-width: 720px;
+    max-width: 1440px;
+    margin: 0 2rem 0 2rem;
+
+    video {
+        z-index: 1;
+        border-radius: 4px;
+        width: 100%;
+        filter: brightness(40%);
+    }
+}
+
+.video-box-title {
+    z-index: 2;
+    position: absolute;
+    margin: 20% 0 0 4rem;
+
+    p,
+    a {
+        color: $basic-000;
+    }
+}
+
+.video-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.video-text {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+.video-link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $primary-600;
+    }
+}
+
 .main-container {
-    height: calc(100vh + $gnbHeight);
+    height: 700px;
 
     .title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         width: 80vw;
-    }
-
-    margin: {
-        top: -$gnbHeight;
-    }
-    
-    background: {
-        image: url($url-images+"bg_section_1.png");
-        repeat: no-repeat;
-        size: cover;
-        position: center;
     }
 }
 
@@ -49,32 +92,118 @@ $url-images: "https://mid-six.github.io/seed/img/";
     width: 1000px;
     content: url($url-images+"img_home_1.png");
 }
-.img-smile-box{
+
+.img-smile-box {
     width: 376px;
-    img{
+
+    img {
         width: 240px;
     }
-    img{
-        &:nth-child(1){ z-index: 1; margin: 0 0 0 100px; content: url($url-images+"img_home_2_1.png"); }
-        &:nth-child(2){ z-index: 4; margin: -140px 0 0 0; content: url($url-images+"img_home_2_2.png"); }
-        &:nth-child(3){ z-index: 3; margin: -140px 0 0 120px; content: url($url-images+"img_home_2_3.png"); }
+
+    img {
+        &:nth-child(1) {
+            z-index: 1;
+            margin: 0 0 0 100px;
+            content: url($url-images+"img_home_2_1.png");
+        }
+
+        &:nth-child(2) {
+            z-index: 4;
+            margin: -140px 0 0 0;
+            content: url($url-images+"img_home_2_2.png");
+        }
+
+        &:nth-child(3) {
+            z-index: 3;
+            margin: -140px 0 0 120px;
+            content: url($url-images+"img_home_2_3.png");
+        }
     }
 }
-.point-image{
+
+.point-image {
     width: 50px;
     margin: 0 0 -5px 540px;
     content: url($url-images+"img_home_2_4.png");
 }
-.roket{
+
+.roket {
     margin: 0 0 0 16px;
     width: 28px;
     position: absolute;
     content: url($url-images+"img_home_3_0.png");
 }
-.header-check{
+
+.header-check {
     height: 80px;
 }
 
-.logo-midchamps{
+.logo-midchamps {
     content: url($url-images+"img_home_3_1.png");
+}
+
+
+@media all and (min-width:320px) and (max-width:1024px) {
+
+    .main-container {
+        height: 500px;
+
+        .title {
+            width: 80vw;
+        }
+    }
+
+
+    .video-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .video-box {
+        position: relative;
+        min-width: 92%;
+        max-width: 92%;
+        margin: 0 2rem 0 2rem;
+
+        video {
+            z-index: 1;
+            border-radius: 4px;
+            width: 100%;
+            filter: brightness(40%);
+        }
+    }
+
+    .video-box-title {
+        position: static;
+        margin: 0 0 1.4rem 0;
+        p,
+        a {
+            color: $basic-500;
+        }
+    }
+
+    .video-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .video-text {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+    }
+
+    .video-link {
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $primary-600;
+        }
+    }
 }
