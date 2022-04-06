@@ -142,9 +142,6 @@ $url-images: "https://mid-six.github.io/seed/img/";
     content: url($url-images+"img_home_3_1.png");
 }
 
-.video_1{
-    content: url($url-video+"video_home_1_720p.mp4");
-}
 
 @media all and (min-width:320px) and (max-width:1024px) {
 
