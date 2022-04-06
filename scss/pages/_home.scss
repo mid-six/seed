@@ -81,10 +81,10 @@ $url-images: "https://mid-six.github.io/seed/img/";
     margin-top: 4rem;
     align-items: center;
 
-    div {
+    .item-box {
         display: flex;
         flex-direction: row;
-        min-width: 100px;
+        min-width: 340px;
         max-width: 1080px;
         margin: 0 2rem 2rem 2rem;
         justify-content: space-between;

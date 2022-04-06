@@ -377,30 +377,30 @@ h3 {
   margin-top: 4rem;
   align-items: center;
 }
-.container div {
+.container .item-box {
   display: flex;
   flex-direction: row;
-  min-width: 100px;
+  min-width: 340px;
   max-width: 1080px;
   margin: 0 2rem 2rem 2rem;
   justify-content: space-between;
 }
-.container div span {
+.container .item-box span {
   width: 2rem;
   height: 2rem;
 }
-.container div article {
+.container .item-box article {
   width: 100%;
 }
-.container div article img {
+.container .item-box article img {
   width: 100%;
   border-radius: 4px;
   margin-bottom: 0.8rem;
 }
-.container div article p {
+.container .item-box article p {
   margin-bottom: 0.5rem;
 }
-.container div article a {
+.container .item-box article a {
   font-weight: 700;
   font-size: 0.9rem;
   color: #026BFF;
