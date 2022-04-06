@@ -1,6 +1,6 @@
 @use '../layout'as *;
 @use '../abstracts'as *;
-@use '../layout/' as *;
+@use '../layout/'as *;
 $url-images: "https://mid-six.github.io/seed/img/";
 
 
@@ -74,6 +74,48 @@ $url-images: "https://mid-six.github.io/seed/img/";
     }
 }
 
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        max-width: 1080px;
+        margin: 0 2rem 2rem 2rem;
+        justify-content: space-between;
+
+        span {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        article {
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 4px;
+                margin-bottom: 0.8rem;
+            }
+            p{
+                margin-bottom: 0.5rem;
+
+            }
+            a{  
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: $secondary-500;
+            }
+        }
+
+    }
+}
+
+
 .main-container {
     height: 700px;
 
@@ -143,9 +185,10 @@ $url-images: "https://mid-six.github.io/seed/img/";
     content: url($url-images+"img_home_3_1.png");
 }
 
-.video1{
-    content: src($url-video+"video_home_1_720p.mp4");
-}
+
+
+
+
 
 @media all and (min-width:320px) and (max-width:1024px) {
 
@@ -183,6 +226,7 @@ $url-images: "https://mid-six.github.io/seed/img/";
     .video-box-title {
         position: static;
         margin: 0 0 2rem 0;
+
         p,
         a {
             color: $basic-500;
