@@ -519,7 +519,7 @@ h3 {
   }
 
   .video-link {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -538,7 +538,7 @@ h3 {
     display: flex;
     flex-direction: row;
     min-width: 340px;
-    max-width: 98%;
+    max-width: 100%;
     margin: 0 2rem 2rem 2rem;
     justify-content: space-between;
   }
@@ -555,11 +555,12 @@ h3 {
     margin-bottom: 0.8rem;
   }
   .container .item-box article p {
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
   .container .item-box article a {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #026BFF;
   }
 }

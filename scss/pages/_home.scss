@@ -247,9 +247,10 @@ $url-images: "https://mid-six.github.io/seed/img/";
     }
 
     .video-link {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 700;
         text-transform: uppercase;
+
 
         &:hover {
             color: $primary-600;
@@ -269,7 +270,7 @@ $url-images: "https://mid-six.github.io/seed/img/";
         display: flex;
         flex-direction: row;
         min-width: 340px;
-        max-width: 98%;
+        max-width: 100%;
         margin: 0 2rem 2rem 2rem;
         justify-content: space-between;
 
@@ -285,13 +286,14 @@ $url-images: "https://mid-six.github.io/seed/img/";
                 border-radius: 4px;
                 margin-bottom: 0.8rem;
             }
-            p{
+            p{  
+                font-size: 0.8rem;
                 margin-bottom: 0.5rem;
 
             }
             a{  
                 font-weight: 700;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 color: $secondary-500;
             }
         }
