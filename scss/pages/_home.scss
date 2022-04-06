@@ -255,4 +255,48 @@ $url-images: "https://mid-six.github.io/seed/img/";
             color: $primary-600;
         }
     }
+
+
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+
+    .item-box {
+        display: flex;
+        flex-direction: row;
+        min-width: 340px;
+        max-width: 98%;
+        margin: 0 2rem 2rem 2rem;
+        justify-content: space-between;
+
+        span {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        article {
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 4px;
+                margin-bottom: 0.8rem;
+            }
+            p{
+                margin-bottom: 0.5rem;
+
+            }
+            a{  
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: $secondary-500;
+            }
+        }
+
+    }
+}
+
 }

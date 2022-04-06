@@ -526,6 +526,42 @@ h3 {
   .video-link:hover {
     color: #F4C930;
   }
+
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+  }
+  .container .item-box {
+    display: flex;
+    flex-direction: row;
+    min-width: 340px;
+    max-width: 98%;
+    margin: 0 2rem 2rem 2rem;
+    justify-content: space-between;
+  }
+  .container .item-box span {
+    width: 2rem;
+    height: 2rem;
+  }
+  .container .item-box article {
+    width: 100%;
+  }
+  .container .item-box article img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+  }
+  .container .item-box article p {
+    margin-bottom: 0.5rem;
+  }
+  .container .item-box article a {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #026BFF;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
