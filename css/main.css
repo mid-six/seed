@@ -397,6 +397,10 @@ h3 {
   content: url("https://mid-six.github.io/seed/img/img_home_3_1.png");
 }
 
+.video1 {
+  content: src("https://mid-six.github.io/seed/video/video_home_1_720p.mp4");
+}
+
 @media all and (min-width: 320px) and (max-width: 1024px) {
   .main-container {
     height: 500px;
