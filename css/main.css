@@ -118,7 +118,11 @@ table {
   border-spacing: 0;
 }
 
-.gnb-transparent {
+.gnb-transparent-m {
+  display: none;
+}
+
+.gnb-transparent-w {
   z-index: 100;
   position: fixed;
   width: 100%;
@@ -133,20 +137,20 @@ table {
   transition-duration: 0.4s;
   transition-timing-function: ease;
 }
-.gnb-transparent .logo {
+.gnb-transparent-w .logo {
   margin-left: 10vw;
   align-self: center;
   height: 30px;
 }
-.gnb-transparent .logo path {
+.gnb-transparent-w .logo path {
   fill: #2D2C2F;
 }
-.gnb-transparent .tr {
+.gnb-transparent-w .tr {
   margin-left: 0;
   margin-right: 10vw;
   visibility: hidden;
 }
-.gnb-transparent ul {
+.gnb-transparent-w ul {
   width: 400px;
   display: flex;
   flex-direction: row;
@@ -164,6 +168,37 @@ table {
   color: #2D2C2F;
 }
 
+@media all and (min-width: 320px) and (max-width: 1024px) {
+  .gnb-transparent-m {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    height: 4.4rem;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .hamburger path {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    --length: 24;
+    --offset: -38;
+    stroke-dasharray: var(--length) var(--total-length);
+    stroke-dashoffset: var(--offset);
+    transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .gnb-transparent-w {
+    display: none;
+  }
+}
 footer {
   background-color: #000000;
   height: 400px;
@@ -400,7 +435,8 @@ h3 {
 
 @media all and (min-width: 320px) and (max-width: 1024px) {
   .main-container {
-    height: 500px;
+    margin-top: 4.4rem;
+    height: 400px;
   }
   .main-container .title {
     width: 80vw;
@@ -428,7 +464,7 @@ h3 {
 
   .video-box-title {
     position: static;
-    margin: 0 0 1.4rem 0;
+    margin: 0 0 2rem 0;
   }
   .video-box-title p,
 .video-box-title a {
@@ -438,14 +474,14 @@ h3 {
   .video-label {
     font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.4rem;
     text-transform: uppercase;
   }
 
   .video-text {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.8rem;
   }
 
   .video-link {

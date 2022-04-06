@@ -1,6 +1,6 @@
 @use '../layout'as *;
 @use '../abstracts'as *;
-
+@use '../layout/' as *;
 $url-images: "https://mid-six.github.io/seed/img/";
 
 
@@ -150,7 +150,8 @@ $url-images: "https://mid-six.github.io/seed/img/";
 @media all and (min-width:320px) and (max-width:1024px) {
 
     .main-container {
-        height: 500px;
+        margin-top: $gnbHeight;
+        height: 400px;
 
         .title {
             width: 80vw;
@@ -181,7 +182,7 @@ $url-images: "https://mid-six.github.io/seed/img/";
 
     .video-box-title {
         position: static;
-        margin: 0 0 1.4rem 0;
+        margin: 0 0 2rem 0;
         p,
         a {
             color: $basic-500;
@@ -191,14 +192,14 @@ $url-images: "https://mid-six.github.io/seed/img/";
     .video-label {
         font-size: 0.8rem;
         font-weight: 700;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.4rem;
         text-transform: uppercase;
     }
 
     .video-text {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-        line-height: 2rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.4rem;
+        line-height: 1.8rem;
     }
 
     .video-link {
