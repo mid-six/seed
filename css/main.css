@@ -197,6 +197,8 @@ table {
 
   .gnb-transparent-w {
     display: none;
+    height: 0px;
+    opacity: 100;
   }
 }
 footer {
