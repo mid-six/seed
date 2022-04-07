@@ -728,7 +728,7 @@ h4 {
     align-items: center;
   }
   .box-2 p {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 1080px;
     font-size: 0.8rem;
     font-weight: 300;
