@@ -728,11 +728,11 @@ h4 {
     align-items: center;
   }
   .box-2 p {
-    min-width: 280px;
+    min-width: fit-content;
     max-width: 1080px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 300;
-    line-height: 1.2rem;
+    line-height: 1rem;
     text-align: center;
     padding: 1rem 2rem 0 2rem;
   }
