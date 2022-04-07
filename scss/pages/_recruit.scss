@@ -80,6 +80,24 @@
         }
     }
 }
+.box-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .head-4{
+    }
+    p{
+        min-width: 320px;
+        max-width: 1080px;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.8rem;
+        text-align: center;
+        padding: 1rem 2rem 0 2rem;
+    }
+}
 
 
 @media all and (min-width:320px) and (max-width:1024px) {
@@ -144,6 +162,25 @@
             border-radius: 4px;
             margin-right: 0.5rem;
         }
+    }
+}
+
+.box-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .head-4{
+    }
+    p{
+        min-width: 320px;
+        max-width: 1080px;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.4rem;
+        text-align: center;
+        padding: 1rem 2rem 0 2rem;
     }
 }
 }

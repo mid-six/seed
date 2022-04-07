@@ -261,6 +261,12 @@ h3 {
   line-height: 3rem;
 }
 
+h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
 .body-m {
   margin-top: 2rem;
   font-size: 1.1rem;
@@ -281,6 +287,12 @@ h3 {
     line-height: 2.1rem;
     text-align: center;
     color: #2D2C2F;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 3rem;
   }
 }
 /*헤더버튼*/
@@ -630,6 +642,23 @@ h3 {
   margin-right: 0.5rem;
 }
 
+.box-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-2 p {
+  min-width: 320px;
+  max-width: 1080px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  text-align: center;
+  padding: 1rem 2rem 0 2rem;
+}
+
 @media all and (min-width: 320px) and (max-width: 1024px) {
   .video-box-sub {
     min-width: 92%;
@@ -689,6 +718,23 @@ h3 {
     padding: 0.5rem;
     border-radius: 4px;
     margin-right: 0.5rem;
+  }
+
+  .box-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-2 p {
+    min-width: 320px;
+    max-width: 1080px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    text-align: center;
+    padding: 1rem 2rem 0 2rem;
   }
 }
 
