@@ -435,7 +435,7 @@ h3 {
   height: 4rem;
   border-radius: 4px;
   overflow: hidden;
-  margin: 7.8rem 16rem 0 0;
+  margin: 7.8rem 16.7rem 0 0;
 }
 
 .light-video {
@@ -551,6 +551,93 @@ h3 {
 
   .light-video {
     width: 30rem;
+  }
+}
+.video-container-sub {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 7.4rem;
+  margin-bottom: 6rem;
+}
+
+.video-box-sub {
+  width: 100%;
+  min-width: 720px;
+  max-width: 1440px;
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-box-sub h1 {
+  color: #DFDFDF;
+  z-index: 2;
+  position: absolute;
+}
+.video-box-sub video {
+  z-index: 1;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+}
+.box-1 a {
+  margin-top: 1rem;
+  background-color: #F0F5FF80;
+  border-style: solid;
+  border-radius: 4px;
+  border-bottom: 2px;
+  border-color: #79787B;
+  padding: 3rem;
+  width: 100%;
+  max-width: 1320px;
+  transition: all 0.5s;
+}
+.box-1 a:hover {
+  background-color: #F0F5FF;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+.box-1 a h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2D2C2F;
+}
+.box-1 a p {
+  font-size: 0.9rem;
+  color: #79787B;
+}
+.box-1 .tag {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.box-1 .tag p {
+  color: #026BFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: #E3EFFF;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+  .video-box-sub {
+    min-width: 92%;
+    max-width: 92%;
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
