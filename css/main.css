@@ -276,9 +276,9 @@ h3 {
 
 @media all and (min-width: 320px) and (max-width: 1024px) {
   .header-title {
-    font-size: 1.34rem;
+    font-size: 1.57rem;
     font-weight: 700;
-    line-height: 2rem;
+    line-height: 2.1rem;
     text-align: center;
     color: #2D2C2F;
   }
@@ -304,6 +304,10 @@ h3 {
   box-shadow: inset 0 -0.2rem #FFD53F;
 }
 
+.white {
+  color: #ffffff;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -316,6 +320,10 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.header-title {
+  z-index: 2;
 }
 
 .video-container {
@@ -410,7 +418,9 @@ h3 {
   height: 700px;
 }
 .main-container .title {
+  display: flex;
   width: 80vw;
+  justify-content: center;
 }
 
 .sub-container {
@@ -418,53 +428,18 @@ h3 {
   margin: 10rem 0 10rem 0;
 }
 
-.img-a {
-  margin-top: 4rem;
-  width: 1000px;
-  content: url("https://mid-six.github.io/seed/img/img_home_1.png");
-}
-
-.img-smile-box {
-  width: 376px;
-}
-.img-smile-box img {
-  width: 240px;
-}
-.img-smile-box img:nth-child(1) {
+.light-size {
   z-index: 1;
-  margin: 0 0 0 100px;
-  content: url("https://mid-six.github.io/seed/img/img_home_2_1.png");
-}
-.img-smile-box img:nth-child(2) {
-  z-index: 4;
-  margin: -140px 0 0 0;
-  content: url("https://mid-six.github.io/seed/img/img_home_2_2.png");
-}
-.img-smile-box img:nth-child(3) {
-  z-index: 3;
-  margin: -140px 0 0 120px;
-  content: url("https://mid-six.github.io/seed/img/img_home_2_3.png");
-}
-
-.point-image {
-  width: 50px;
-  margin: 0 0 -5px 540px;
-  content: url("https://mid-six.github.io/seed/img/img_home_2_4.png");
-}
-
-.roket {
-  margin: 0 0 0 16px;
-  width: 28px;
   position: absolute;
-  content: url("https://mid-six.github.io/seed/img/img_home_3_0.png");
+  width: 11rem;
+  height: 4rem;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 7.8rem 16rem 0 0;
 }
 
-.header-check {
-  height: 80px;
-}
-
-.logo-midchamps {
-  content: url("https://mid-six.github.io/seed/img/img_home_3_1.png");
+.light-video {
+  width: 40rem;
 }
 
 @media all and (min-width: 320px) and (max-width: 1024px) {
@@ -562,6 +537,20 @@ h3 {
     font-weight: 700;
     font-size: 0.8rem;
     color: #026BFF;
+  }
+
+  .light-size {
+    z-index: 1;
+    position: absolute;
+    width: 6.5rem;
+    height: 2.1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 4.15rem 9.4rem 0 0;
+  }
+
+  .light-video {
+    width: 30rem;
   }
 }
 
