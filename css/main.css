@@ -243,11 +243,14 @@ footer a:hover, footer a:active {
 }
 
 .header-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 4rem;
   text-align: center;
   color: #2D2C2F;
+}
+.header-title-white {
+  color: #ffffff;
+}
+.header-title-gray {
+  color: #dfdfdf;
 }
 
 h1 {
@@ -288,12 +291,21 @@ h4 {
 }
 
 @media all and (min-width: 320px) and (max-width: 1024px) {
-  .header-title {
-    font-size: 1.57rem;
+  h1 {
+    font-size: 1.58rem;
     font-weight: 700;
     line-height: 2.1rem;
+  }
+
+  .header-title {
     text-align: center;
     color: #2D2C2F;
+  }
+  .header-title-white {
+    color: #ffffff;
+  }
+  .header-title-gray {
+    color: #dfdfdf;
   }
 
   h4 {
@@ -590,7 +602,6 @@ h4 {
   align-items: center;
 }
 .video-box-sub h1 {
-  color: #DFDFDF;
   z-index: 2;
   position: absolute;
 }
@@ -820,6 +831,7 @@ h4 {
     margin: 0 0 1rem 1rem;
     font-size: 0.9rem;
     line-height: 1.3rem;
+    font-weight: 300;
   }
 
   .line-gray {

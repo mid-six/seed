@@ -1,22 +1,25 @@
 @use '../abstracts'as *;
 @use '../layout'as *;
 
-.header-title{
-    font: {
-        size: 2.8rem;
-        weight: 700;
-    }
-    line-height: 4rem;
+.header-title {
     text-align: center;
     color: $basic-500;
-}
 
+    &-white {
+        color: $basic-000;
+    }
+
+    &-gray {
+        color: #dfdfdf;
+    }
+}
 
 h1 {
     font: {
         size: 2.8rem;
         weight: 700;
     }
+
     line-height: 4rem;
 }
 
@@ -25,6 +28,7 @@ h2 {
         size: 2.8rem;
         weight: 600;
     }
+
     line-height: 3.4rem;
 }
 
@@ -33,6 +37,7 @@ h3 {
         size: 2rem;
         weight: 600;
     }
+
     line-height: 3rem;
 }
 
@@ -41,6 +46,7 @@ h4 {
         size: 1.7rem;
         weight: 600;
     }
+
     line-height: 3rem;
 }
 
@@ -62,23 +68,37 @@ h4 {
 
 
 @media all and (min-width:320px) and (max-width:1024px) {
-    .header-title{
+    h1 {
         font: {
-            size: 1.57rem;
+            size: 1.58rem;
             weight: 700;
-        }
+        }        
         line-height: 2.1rem;
+    }
+    
+    
+    .header-title {
+        
         text-align: center;
         color: $basic-500;
+
+        &-white {
+            color: $basic-000;
+        }
+
+        &-gray {
+            color: #dfdfdf;
+        }
     }
 
-h4 {
-    font: {
-        size: 1.2rem;
-        weight: 600;
-    }
-    line-height: 3rem;
-}
+    h4 {
+        font: {
+            size: 1.2rem;
+            weight: 600;
+        }
 
-    
+        line-height: 3rem;
+    }
+
+
 }
