@@ -752,10 +752,22 @@ h4 {
     margin-top: 100px;
   }
 
-  .dddd {
-    margin-top: 2rem;
-    border-top: 1px solid #E4E4E4;
-    padding: 2rem 0 2rem 0;
+  .about-work {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 2rem 0 0 0;
+  }
+  .about-work ul > li {
+    list-style-type: square;
+    margin: 0 0 1rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  .line-gray {
+    margin: 2rem 0 0 0;
+    height: 1px;
+    background-color: #E4E4E4;
   }
 }
 
