@@ -425,6 +425,7 @@ h4 {
 }
 
 .flex-column {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -527,6 +528,7 @@ h4 {
   height: 700px;
 }
 .main-container .title {
+  position: relative;
   display: flex;
   width: 80vw;
   justify-content: center;
@@ -645,19 +647,19 @@ h4 {
     height: 400px;
   }
   .main-container .title {
+    position: relative;
     width: 320px;
   }
 
   .light-size {
-    z-index: 1;
     position: absolute;
+    z-index: 1;
     width: 6.5rem;
     height: 2.1rem;
     border-radius: 4px;
     overflow: hidden;
-    margin: 0 auto;
-    margin-top: 4.15rem;
-    margin-right: 9.4rem;
+    bottom: 0;
+    left: 2.1rem;
   }
 
   .light-video {
