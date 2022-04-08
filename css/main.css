@@ -132,7 +132,6 @@ table {
 
 .gnb-transparent-w {
   z-index: 100;
-  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -668,9 +667,53 @@ h4 {
   padding: 1rem 2rem 0 2rem;
 }
 
-/*상세*/
+/*상세페이지*/
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  align-self: center;
+}
+
 .top_title {
   margin-top: 100px;
+}
+
+.about-work {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem 0 0 0;
+}
+.about-work h4 {
+  margin-bottom: -0.4rem;
+}
+.about-work ul > li {
+  list-style-type: square;
+  margin: 0 0 1rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 200;
+}
+
+.line-gray {
+  margin: 2rem 0 0 0;
+  height: 1px;
+  background-color: #E4E4E4;
+}
+
+.mail-button {
+  height: 3.5rem;
+  margin: 1rem 0 5rem 0;
+}
+.mail-button a {
+  background-color: #026BFF;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
 }
 
 @media all and (min-width: 320px) and (max-width: 1024px) {
@@ -750,6 +793,14 @@ h4 {
     line-height: 1rem;
     text-align: center;
     padding: 1rem 2rem 0 2rem;
+  }
+
+  /*상세페이지*/
+  .center {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-self: center;
   }
 
   .top_title {

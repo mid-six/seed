@@ -108,11 +108,58 @@
 }
 
 
-/*상세*/
+/*상세페이지*/
+.center{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+    align-self: center;
+}
+
 .top_title {
     margin-top: 100px;
 }
 
+
+.about-work {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 2rem 0 0 0;
+
+    h4 {
+        margin-bottom: -0.4rem;
+    }
+
+    ul>li {
+        list-style-type: square;
+        margin: 0 0 1rem 1rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 200;
+    }
+}
+
+.line-gray {
+    margin: 2rem 0 0 0;
+    height: 1px;
+    background-color: $basic-100;
+}
+
+.mail-button {
+    height: 3.5rem;
+    margin: 1rem 0 5rem 0;
+
+    a {
+        background-color: $secondary-500;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: $basic-000;
+    }
+}
 
 @media all and (min-width:320px) and (max-width:1024px) {
 
@@ -203,7 +250,17 @@
             padding: 1rem 2rem 0 2rem;
         }
     }
-    
+
+
+    /*상세페이지*/
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-self: center;
+    }
+
     .top_title {
         margin-top: 100px;
     }
@@ -213,32 +270,35 @@
         display: grid;
         grid-gap: 1rem;
         padding: 2rem 0 0 0;
-        h4{
+
+        h4 {
             margin-bottom: -0.8rem;
         }
-        ul > li{
+
+        ul>li {
             list-style-type: square;
             margin: 0 0 1rem 1rem;
             font-size: 0.9rem;
             line-height: 1.3rem;
         }
     }
-    
-    .line-gray{
+
+    .line-gray {
         margin: 2rem 0 0 0;
         height: 1px;
         background-color: $basic-100;
     }
 
-    .mail-button{
+    .mail-button {
         height: 3.5rem;
         margin: 1rem 0 5rem 0;
-        a{
+
+        a {
             background-color: $secondary-500;
             border-radius: 8px;
             display: flex;
-        justify-content: center;
-        align-items: center;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 100%;
             color: $basic-000;
