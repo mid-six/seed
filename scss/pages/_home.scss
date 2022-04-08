@@ -152,15 +152,6 @@ $url-images: "https://mid-six.github.io/seed/img/";
 
 @media all and (min-width:320px) and (max-width:1024px) {
 
-    .main-container {
-        margin-top: $gnbHeight;
-        height: 400px;
-
-        .title {
-            width: 80vw;
-        }
-    }
-
 
     .video-container {
         width: 100vw;
@@ -263,6 +254,17 @@ $url-images: "https://mid-six.github.io/seed/img/";
 }
 
 
+
+.main-container {
+    margin-top: $gnbHeight;
+    height: 400px;
+
+    .title {
+        width: 80vw;
+    }
+}
+
+
 .light-size{
     z-index: 1;
     position: absolute;
@@ -270,7 +272,9 @@ $url-images: "https://mid-six.github.io/seed/img/";
     height: 2.1rem;
     border-radius: 4px;
     overflow: hidden;
-    margin: 4.15rem 9.4rem 0 0;
+    margin: 0 auto;
+    margin-top: 4.15rem;
+    margin-right: 9.4rem;
 }
 .light-video{
     width: 30rem;
