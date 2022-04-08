@@ -6,6 +6,12 @@ $url-video: "https://mid-six.github.io/seed/video/";
     &top{margin-top: 2rem;}
     &bottom{margin-bottom: 2rem;}
 }
+
+.padding-left-right{
+    padding: 0rem 1rem 0 1rem;
+}
+
+
 .z-index{
     &-1{z-index: 1;}
     &-2{z-index: 2;}
