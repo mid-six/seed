@@ -88,9 +88,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: aqua;
         video{
-                width: max-content;
+            border-radius: 4px;
+            width: max-content;
+            max-height: max-content;
         }
     }
 
