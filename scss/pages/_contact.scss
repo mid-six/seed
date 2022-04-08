@@ -3,6 +3,32 @@
 @use '../layout/'as *;
 
 
+.video-box-sub-h {
+    width: 100%;
+    min-width: 720px;
+    max-width: 1440px;
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        z-index: 2;
+        position: absolute;
+    }
+
+    video {
+        z-index: 1;
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
 .asd{
     width: 100%;
     position: absolute;
@@ -50,4 +76,23 @@
         }
     }
     
+
+
+    .video-box-sub-h {
+        border-radius: 4px;
+        overflow: hidden;
+        min-width: 92%;
+        max-width: 92%;
+        height: 70vh;
+        margin: 0 2rem 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        video{
+                width: max-content;
+        }
+    }
+
+
 }

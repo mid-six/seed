@@ -335,6 +335,25 @@ h4 {
   box-shadow: inset 0 -0.2rem #FFD53F;
 }
 
+.video-box-sub-h {
+  width: 100%;
+  min-width: 720px;
+  max-width: 1440px;
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-box-sub-h h1 {
+  z-index: 2;
+  position: absolute;
+}
+.video-box-sub-h video {
+  z-index: 1;
+  border-radius: 4px;
+  width: 100%;
+}
+
 .asd {
   width: 100%;
   position: absolute;
@@ -375,6 +394,22 @@ h4 {
     width: 160px;
     height: 90%;
     color: #ffffff;
+  }
+
+  .video-box-sub-h {
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 92%;
+    max-width: 92%;
+    height: 70vh;
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+  }
+  .video-box-sub-h video {
+    width: max-content;
   }
 }
 .white {
