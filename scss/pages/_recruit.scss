@@ -208,10 +208,14 @@
         margin-top: 100px;
     }
 
+
     .about-work {
         display: grid;
         grid-gap: 1rem;
         padding: 2rem 0 0 0;
+        h4{
+            margin-bottom: -0.8rem;
+        }
         ul > li{
             list-style-type: square;
             margin: 0 0 1rem 1rem;
