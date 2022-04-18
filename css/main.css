@@ -961,7 +961,7 @@ h4 {
 .serview-video-container {
   width: 96vw;
   max-width: 1080px;
-  margin: -6rem 0 4rem 0;
+  margin: -3rem 0 4rem 0;
 }
 .serview-video-container video {
   width: 100%;
@@ -986,6 +986,14 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+.service-box div img {
+  margin-top: 2rem;
+  width: 300px;
+  border-radius: 1rem;
+  border: 1px;
+  border-color: #00000020;
+  border-style: outset;
+}
 
 @media all and (min-width: 320px) and (max-width: 1024px) {
   .service-box {
@@ -995,12 +1003,10 @@ h4 {
     flex-direction: column;
     padding: 3rem 0 3rem 0;
     align-items: center;
-    background-color: antiquewhite;
   }
   .service-box div {
-    background-color: aqua;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     max-width: 100%;
     min-width: 320px;
     width: 100%;
@@ -1009,13 +1015,36 @@ h4 {
     justify-content: space-between;
     align-items: center;
   }
+  .service-box div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+  .service-box div article h4 {
+    line-height: 1.6rem;
+    width: 85vw;
+    text-align: left;
+  }
+  .service-box div article p {
+    margin-top: 1rem;
+    line-height: 1.3rem;
+    width: 85vw;
+    text-align: left;
+  }
+  .service-box div img {
+    margin-top: 0.5rem;
+    width: 85vw;
+    border-radius: 1rem;
+    border: 1px;
+    border-color: #00000020;
+    border-style: outset;
+  }
 
   .serview-video-container {
     width: 94vw;
-  }
-  .serview-video-container video {
-    width: 100%;
-    border-radius: 4px;
+    max-width: 1080px;
+    margin: -6rem 0 4rem 0;
   }
 }
 
