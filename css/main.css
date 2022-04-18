@@ -247,9 +247,11 @@ footer a:hover, footer a:active {
   color: #2D2C2F;
 }
 .header-title-white {
+  text-align: center;
   color: #ffffff;
 }
 .header-title-gray {
+  text-align: center;
   color: #dfdfdf;
 }
 
@@ -936,6 +938,84 @@ h4 {
     width: 100%;
     height: 100%;
     color: #ffffff;
+  }
+}
+.header-img-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-img-container .header-img {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  justify-content: center;
+}
+.header-img-container .header-img img {
+  width: 8rem;
+  margin: 0 0 2rem 0;
+}
+
+.serview-video-container {
+  width: 96vw;
+  max-width: 1080px;
+  margin: -6rem 0 4rem 0;
+}
+.serview-video-container video {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.service-box {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0 3rem 0;
+  align-items: center;
+}
+.service-box div {
+  display: flex;
+  flex-direction: row;
+  max-width: 860px;
+  min-width: 320px;
+  width: 100%;
+  padding: 10rem 2rem 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+  .service-box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 0 3rem 0;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  .service-box div {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    min-width: 320px;
+    width: 100%;
+    margin: 3rem 2rem 3rem 2rem;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .serview-video-container {
+    width: 94vw;
+  }
+  .serview-video-container video {
+    width: 100%;
+    border-radius: 4px;
   }
 }
 
