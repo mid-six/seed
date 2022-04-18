@@ -982,13 +982,29 @@ h4 {
   max-width: 860px;
   min-width: 320px;
   width: 100%;
-  padding: 10rem 2rem 0 2rem;
+  padding: 10rem 0 0 0;
   justify-content: space-between;
   align-items: center;
 }
+.service-box div article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.service-box div article h4 {
+  line-height: 2.6rem;
+  width: fit-content;
+  text-align: left;
+}
+.service-box div article p {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+  width: fit-content;
+  text-align: left;
+}
 .service-box div img {
-  margin-top: 2rem;
-  width: 300px;
+  margin-top: 0;
+  width: 280px;
   border-radius: 1rem;
   border: 1px;
   border-color: #00000020;
@@ -1019,7 +1035,6 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2rem;
   }
   .service-box div article h4 {
     line-height: 1.6rem;
@@ -1033,8 +1048,9 @@ h4 {
     text-align: left;
   }
   .service-box div img {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     width: 85vw;
+    max-width: 500px;
     border-radius: 1rem;
     border: 1px;
     border-color: #00000020;
